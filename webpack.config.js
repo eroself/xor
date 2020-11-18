@@ -6,7 +6,11 @@ const merge = require('webpack-merge');
 const flowDefaults = require('./webpack.generated.js');
 
 module.exports = merge(flowDefaults, {
-
+    performance: {
+        maxEntrypointSize: 51200000,
+        maxAssetSize: 51200000,
+        hints: false
+    }
 });
 
 /**

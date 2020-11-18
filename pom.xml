@@ -216,6 +216,10 @@
         </dependency>
 
         <!-- Compile scope is needed to run on WildFly -->
+        <dependency>
+            <groupId>org.reactivestreams</groupId>
+            <artifactId>reactive-streams</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.wontlost</groupId>
