@@ -1,10 +1,10 @@
 {
-  "name": "Cypher",
-  "short_name": "Cypher",
+  "name": "XOR",
+  "short_name": "XOR",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "Cypher implementation on ckeditor and vaadin.",
+  "description": "XOR implementation on ckeditor and vaadin.",
   "icons": [{
     "src": "icons/icon-16x16.png",
     "sizes": "16x16",
