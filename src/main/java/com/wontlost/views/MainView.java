@@ -52,7 +52,7 @@ public class MainView extends AppLayout{
         final Tabs tabs = new Tabs();
         tabs.setOrientation(Tabs.Orientation.HORIZONTAL);
         tabs.add(getAvailableTabs());
-        tabs.add(donateButton());
+//        tabs.add(donateButton());
         return tabs;
     }
 
@@ -63,17 +63,17 @@ public class MainView extends AppLayout{
         return tabs.toArray(new Tab[0]);
     }
 
-    private static Div donateButton() {
-        Div div = new Div();
-        div.getElement().setProperty("innerHTML", "<form action=\"https://www.paypal.com/cgi-bin/webscr\" " +
-                "method=\"post\" target=\"_top\" style=\"display:flex; align-items:center; height: 100%; \"> "+
-                "<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> "+
-                "<input type=\"hidden\" name=\"hosted_button_id\" value=\"7GG7XSYJ4TZFQ\" /> "+
-                "<input type=\"image\" src=\"icons/money.png\" border=\"0\" name=\"submit\" style= \"width:48px; height:36px\"" +
-                " title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />"+
-                "</form> ");
-        return div;
-    }
+//    private static Div donateButton() {
+//        Div div = new Div();
+//        div.getElement().setProperty("innerHTML", "<form action=\"https://www.paypal.com/cgi-bin/webscr\" " +
+//                "method=\"post\" target=\"_top\" style=\"display:flex; align-items:center; height: 100%; \"> "+
+//                "<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" /> "+
+//                "<input type=\"hidden\" name=\"hosted_button_id\" value=\"7GG7XSYJ4TZFQ\" /> "+
+//                "<input type=\"image\" src=\"icons/money.png\" border=\"0\" name=\"submit\" style= \"width:48px; height:36px\"" +
+//                " title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />"+
+//                "</form> ");
+//        return div;
+//    }
 
     private static Tab createTab(String title, VaadinIcon icon, Class<? extends Component> viewClass) {
         return createTab(populateLink(new RouterLink(null, viewClass), icon, title));
